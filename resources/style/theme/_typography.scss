@@ -1,0 +1,32 @@
+// ===== FONT SIZE VARIATIONS =====
+$main_font_size: 1em;
+$sub_headings: 1rem;
+
+
+body{
+    background-color: $background_color;
+    h1{
+        @include heading();
+        font-size: calc(0.8rem + 2vw);
+    }
+
+    h5{
+        @include font-package();
+        text-decoration: underline;
+        margin: 15px;
+    }
+
+    p{
+        font-weight: 100;
+    }
+
+    hr{
+        margin: 50px;
+    }
+
+    h3{
+        @include sum-package();
+    }
+
+}
+

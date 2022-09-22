@@ -1,0 +1,29 @@
+// ==== HEROOOOO LAYOUT
+
+.hero{
+    background-image: url(../assets/images/dark-forest.png);    
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.hero-absolute{
+    @include heading;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    margin-top: 180px;
+
+    h1{
+        margin: 0;
+    }
+    .text-yellow{
+        color: $main_color;
+    }
+}

@@ -1,0 +1,73 @@
+// ================================
+//              TYPOGRAPHY 
+// ================================
+
+@mixin font-package{
+    font-family: Helvetica, sans-serif;
+    font-size: $main_font_size;
+}
+
+@mixin heading{
+    font-family: 'Futura';
+    color: $light_color;
+    font-size: $sub_headings;
+}
+
+@mixin section-titles{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: $main_font_size;
+}
+
+@mixin sum-package{
+    font-family: 'Futura';
+    color: $light_color;
+    font-weight: lighter;
+    font-size: $sub_headings;    
+}
+
+
+
+// ===== ul li list reset ===
+@mixin list-reset{
+    ul{
+        list-style: none;
+    }
+
+    li:hover{
+        text-decoration: underline;
+    }
+
+    a{
+        color: $light_color;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $main_color;
+    }
+}
+
+header{
+    @include list-reset();
+}
+
+
+
+// ====== BUTTONS =========
+
+@mixin buttons{
+    border: 5px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 4px 2px;    
+}
+
+@mixin lined-link{
+    padding: 0;
+    border-bottom: 1px solid;
+    text-align: center;
+    margin: 16px;
+}
+
